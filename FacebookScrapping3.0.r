@@ -2,6 +2,7 @@ library(RSelenium)
 library(rvest)
 library(tidyverse)
 library(odbc)
+library(RSQLite)
 library(qdapRegex)
 library(lubridate)
 
