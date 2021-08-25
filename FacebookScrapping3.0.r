@@ -10,27 +10,27 @@ library(lubridate)
 fb_group <- function(groups, scrolltimes){
     
     print("connecting to database")
+
+    con <- dbConnect(SQLite(),dbname = "facebook.db")
     
-    
-    con <- dbConnect(SQLite(),dbname = "C:/Users/Hamza/Desktop/Internship/facebook.db")
-    
+    # Read facebook credentials
     
     adress <- readline("Enter Facebook email adress : ")
     password <- readline("Enter password :")
     
-    port <- sample(1000:9999,1)
-    eCaps <- list(chromeOptions = list( binary = "C:\\Program Files\\Google\\Chrome Beta\\Application\\chrome.exe" ) )
+    # Create Headless WebBrowser with RSelenium
     
+    port <- sample(1000:9999,1)
+  
     print("loading WebDriver")
     
-    rD <- rsDriver(verbose = F,check = F ,browser = "chrome" , port = port, extraCapabilities = eCaps)
-    Sys.sleep(8)
+    rD <- rsDriver(verbose = F,check = F ,browser = "chrome" , port = port)
     
+    Sys.sleep(8)
     
     print("Connecting To Facebook")
     
     remDr <- rD$client
-    
     
     remDr$navigate("https://m.facebook.com")
     
@@ -130,7 +130,7 @@ return[obs,time,url];
         
         # Processing Data
         
-        print("processing Url Data...")
+        print("processing Images Url Data...")
         
         
         # URL data cleaning and processing
@@ -281,6 +281,9 @@ return[obs,time,url];
             
         }
         
+        
+        # Format the dates 
+        
         newTime <- rep(ymd(Sys.Date()), nrow(data))
         
         for( i in 1:nrow(data)){
@@ -379,9 +382,7 @@ return[obs,time,url];
     
     final_content_data <- final_content_data[-1,]
     final_image_data <- final_image_data[-1,]
-    
-    R <<- final_content_data
-    RU <<- final_image_data
+   
     print("inserting data into database")
     
     insertData <- data.frame(
