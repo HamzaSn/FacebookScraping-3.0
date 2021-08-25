@@ -23,7 +23,8 @@ and execute the following steps :
 
 here's the ERD of the database
 
-![ERD](https://user-images.githubusercontent.com/81447987/130844749-8665205d-2909-4b74-9e54-65116db07ec4.PNG)
+![ERD](https://user-images.githubusercontent.com/81447987/130847575-257dd13c-6cea-4d0d-8360-1153794b6fea.PNG)
+
 
 a sample of data extracted 
 
