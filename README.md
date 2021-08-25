@@ -29,7 +29,7 @@ a sample of data extracted
 
 ![datasample](https://user-images.githubusercontent.com/81447987/130845719-3b128923-2db8-4ed1-a6c6-bd5e9f3c96ce.PNG)
 
-
+![images](https://user-images.githubusercontent.com/81447987/130846211-81192768-912b-4b5a-b803-f3805838975f.PNG)
 
 
 
