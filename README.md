@@ -2,7 +2,7 @@
 
 # Facebook group Data scraping solution
 
-A solution for data scraping from facebook tunisian groups built with R programming language, Selenium server ,JavaScrip queries and SQLite
+A solution for data scraping from facebook tunisian groups built with R programming language, Selenium server ,JavaScript queries and SQLite
 
 
 # Details : 
