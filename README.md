@@ -2,29 +2,23 @@
 
 # Facebook group Data scraping solution
 
-A solution for data scraping from facebook tunisian groups built with R programming language, Selenium server ,JavaScript queries and SQLite
+A solution for data extraction from facebook tunisian groups built with R programming language, Selenium server ,JavaScript queries and SQLite database
 
 
 # Details : 
 
-The solution is a function that takes as arguments a vector of facebook groups and the number of scroll units ( 1 units : scroll to the botton of the current page )
+The solution is a function that takes as arguments a list of facebook groups and execute the following steps : 
 
-and execute the following steps : 
-
-- connect to facebook account 
+- connect to facebook account using user fb-credentials
 - navigate to group
-- scroll
-- send JS query to get the data 
+- reapeat scrolliing and send JS query to get the data 
 - process the data ( cleaning and formating )
 - extract informations like phone number and city
 - append the data to the existing SQLite databse
 
-
-
-here's the ERD of the database
+database ERD :
 
 ![ERD](https://user-images.githubusercontent.com/81447987/130847575-257dd13c-6cea-4d0d-8360-1153794b6fea.PNG)
-
 
 a sample of data extracted 
 
