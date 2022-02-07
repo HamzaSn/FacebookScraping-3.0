@@ -1,9 +1,8 @@
-## FacebookScraping-3.0
+## Facebook Scraping
 
-# Facebook group Data scraping solution
+# Facebook groups data scraping solution
 
 A solution for data extraction from facebook tunisian groups built with R programming language, Selenium server ,JavaScript queries and SQLite database
-
 
 # Details : 
 
